@@ -1,11 +1,18 @@
 @import 'https://unpkg.com/98.css@0.1.17/dist/98.css';
 
+:root {
+	--n98-box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
+	--n98-bg: silver;
+	--p98-pd: 3px;
+	--p98-titlebar-bg: linear-gradient(90deg,navy,#1084d0);
+}
+
 /* Window */
 .notion-peek-renderer > div:last-child,
 .notion-frame {
-	background: silver !important;
-	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff !important;
-	padding: 3px !important;
+	background: var(--n98-bg) !important;
+	box-shadow: var(--n98-box-shadow) !important;
+	padding: var(--n98-pd) !important;
 	border-radius: 0 !important;
 }
 .notion-peek-renderer > div:last-child > div > div > div {
@@ -21,7 +28,7 @@
 /* Window: Titlebar */
 .notion-peek-renderer > div:last-child > div:first-child > div:first-child {
 	align-items: center !important;
-	background: linear-gradient(90deg,navy,#1084d0) !important;
+	background: var(--p98-titlebar-bg) !important;
 	display: flex !important;
 	justify-content: space-between !important;
 	padding: 3px 2px 3px 3px !important;
@@ -34,7 +41,7 @@
 .notion-topbar {
 	padding: 3px 2px 3px 3px !important;
 	height: 25px !important;
-	background: linear-gradient(90deg,navy,#1084d0) !important;
+	background: var(--p98-titlebar-bg) !important;
 }
 .notion-topbar > div > div {
 	height: 20px !important;
@@ -42,12 +49,12 @@
 }
 .notion-topbar-mobile {
 	padding: 3px 2px 3px 3px !important;
-	background: linear-gradient(90deg,navy,#1084d0) !important;
+	background: var(--p98-titlebar-bg) !important;
 }
 
 .notion-peek-renderer > div:last-child > div:first-child > div:first-child [role="button"]:not(.notion-record-icon),
 .notion-topbar > div > div [role="button"]:not(.notion-record-icon) {
-	background: silver !important;
+	background: var(--n98-bg) !important;
   box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf !important;
 	height: 20px !Important;
 	color: #000 !important;
@@ -114,8 +121,8 @@ DIV.notion-topbar > DIV > DIV:last-child [role="button"]:not(.notion-record-icon
 /* Collection View */
 /* .notion-page-content > .notion-collection_view-block, */
 .notion-gallery-view .notion-collection-item {
- 	background: silver !important;
-	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff !important;
+ 	background: var(--n98-bg) !important;
+	box-shadow: var(--n98-box-shadow) !important;
 	border-bottom: 0 !important;	
 	padding: 3px !important;
 	border-radius: 0 !important;
@@ -133,7 +140,7 @@ DIV.notion-topbar > DIV > DIV:last-child [role="button"]:not(.notion-record-icon
 }
 
 .notion-page-content > .notion-collection_view-block .notion-gallery-view .notion-collection-item > a > div > div:nth-child(2) {
-	background: linear-gradient(90deg,navy,#1084d0) !important;
+	background: var(--p98-titlebar-bg) !important;
 	padding: 3px 2px 3px 3px !important;
 	padding-left: 10px !important;
 }
@@ -157,14 +164,14 @@ DIV.notion-topbar > DIV > DIV:last-child [role="button"]:not(.notion-record-icon
 	background: none !important;
 }
 .notion-board-group .notion-collection-item > a {
-	background: silver !important;
-	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff !important;
+	background: var(--n98-bg) !important;
+	box-shadow: var(--n98-box-shadow) !important;
 	padding: 3px !important;
 	border-radius: 0 !important;	
 }
 
 .notion-callout-block {
-	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff !important;
+	box-shadow: var(--n98-box-shadow) !important;
 	padding: 3px !important;
 	border-radius: 0 !important;	
 }
@@ -184,8 +191,8 @@ DIV.notion-topbar > DIV > DIV:last-child [role="button"]:not(.notion-record-icon
 
 /* Bookmark Block */
 .notion-bookmark-block .notion-focusable {
-	background: silver !important;
-	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff !important;
+	background: var(--n98-bg) !important;
+	box-shadow: var(--n98-box-shadow) !important;
 	padding: 3px !important;
 	border-radius: 0 !important;
 }
@@ -206,14 +213,14 @@ DIV.notion-topbar > DIV > DIV:last-child [role="button"]:not(.notion-record-icon
 
 /* Calendar View */
 .notion-calendar-view > div:first-child > div:last-child {
-	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff !important;
+	box-shadow: var(--n98-box-shadow) !important;
 	padding: 3px !important;
 	border-radius: 0 !important;	
 }
 
 .notion-calendar-view .notion-page-block > a {
-	background: silver !important;	
-	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff !important;
+	background: var(--n98-bg); !important	
+	box-shadow: var(--n98-box-shadow) !important;
 	padding: 3px !important;
 	border-radius: 0 !important;
 	color: #fff;
@@ -221,5 +228,5 @@ DIV.notion-topbar > DIV > DIV:last-child [role="button"]:not(.notion-record-icon
 }
 
 .notion-calendar-view .notion-collection_view-block {
-	background: silver !important;
+	background: var(--n98-bg) !important;
 }
