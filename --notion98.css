@@ -219,14 +219,18 @@ DIV.notion-topbar > DIV > DIV:last-child [role="button"]:not(.notion-record-icon
 }
 
 .notion-calendar-view .notion-page-block > a {
-	background: var(--n98-bg); !important	
+	background: var(--n98-bg) !important	;
 	box-shadow: var(--n98-box-shadow) !important;
 	padding: 3px !important;
 	border-radius: 0 !important;
-	color: #fff;
 	background: #ccc !important;
 }
 
 .notion-calendar-view .notion-collection_view-block {
 	background: var(--n98-bg) !important;
+}
+
+.notion-callout-block .notion-callout-block:empty {
+	border: none !Important;
+	padding: 0 !important;
 }

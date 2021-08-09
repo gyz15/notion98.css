@@ -1,0 +1,28 @@
+{
+  "name": "notion98.css",
+  "version": "1.0.0",
+  "description": "Give your Notion a 90s vibe",
+  "main": "dist/notion98.css",
+  "scripts": {
+    "start": "parcel notion98.sass",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ozramos/notion98.css.git"
+  },
+  "author": "Oz Ramos <heyozramos@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ozramos/notion98.css/issues"
+  },
+  "homepage": "https://github.com/ozramos/notion98.css#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.37.5",
+    "stylus": "^0.54.8"
+  },
+  "dependencies": {
+    "98.css": "^0.1.17"
+  }
+}
